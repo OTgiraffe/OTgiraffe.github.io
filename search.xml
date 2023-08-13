@@ -4,25 +4,6 @@
   
     
     <entry>
-      <title>test</title>
-      <link href="/2023/08/10/test/"/>
-      <url>/2023/08/10/test/</url>
-      
-        <content type="html"><![CDATA[<p>个人网站 - 搭建</p><p>本篇个人网站是部署在github上<br>主要内容：</p><p>1.注册github账号</p><p>2.在github创建个人仓库，用来部署个人网站</p><p>3.配置github的SSH秘钥，部署时鉴权</p><p>4.安装博客生成工具hexo</p><p>5.生成本地博客</p><p>6.部署到github上</p><p>1.登录github,点击new </p><img src="/2023/08/10/test/image-new.jpg" class="" title="This is an example image"><img src="/2023/08/10/test/image-new.jpg" class="" title="这是一张图片"><p><img src="/2023/08/10/test/image-new.png" alt="image-new"><br>创建个人仓库，这里的仓库名字要固定写法：用户名.github.io，如：OTgiraffe.github.io，这里的用户名要替换成你的</p><img src="个人网站-创建/image-create.png" alt="image-create" style="zoom:50%;" /><p>3.配置github SSH秘钥</p><p>上面是你创建的个人github仓库，只有你有权限往仓库上传数据，所以在上传数据时，github会进行鉴定权限，有两种方式：</p><ul><li>账号密码</li><li>SSH秘钥</li></ul><p>上传数据账号密码鉴权在21年就已经禁止，如果你用账号密码上传会有以下提示</p><p>补充</p><p>所以只能用SSH秘钥鉴权方式</p><p>3.1生成本地SSH秘钥</p><p>ssh-keygen -t ras -C “你的github注册邮箱”</p><p>如我的：ssh-keygen -t ras -C “<a href="mailto:&#x4f;&#84;&#103;&#105;&#x72;&#x61;&#102;&#102;&#101;&#64;&#x31;&#54;&#x33;&#x2e;&#99;&#111;&#109;">&#x4f;&#84;&#103;&#105;&#x72;&#x61;&#102;&#102;&#101;&#64;&#x31;&#54;&#x33;&#x2e;&#99;&#111;&#109;</a>“</p><p>直接三个回车，默认不需要密码，最后得到两个文件id_rsa和id_rsa.pub</p><img src="个人网站-创建/image-rsa-folder.png" alt="image-rsa-folder" style="zoom:100%;" /><p>打开id_rsa.pub,将里面的内容全部复制</p><img src="个人网站-创建/image-rsa.png" alt="image-rsa" style="zoom:100%;" /> <p>黏贴到github: Settings -&gt; SSH and GPG keys -&gt;new SSH key</p><img src="个人网站-创建/image-github-rsa.png" alt="image-github-rsa" style="zoom:100%;" />]]></content>
-      
-      
-      <categories>
-          
-          <category> 个人网站维护 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>个人网站-创建</title>
       <link href="/2023/08/10/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-%E5%88%9B%E5%BB%BA/"/>
       <url>/2023/08/10/%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-%E5%88%9B%E5%BB%BA/</url>
@@ -54,44 +35,6 @@
           <category> 哲学 </category>
           
       </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World11</title>
-      <link href="/2023/08/02/hello-world/"/>
-      <url>/2023/08/02/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start11"><a href="#Quick-Start11" class="headerlink" title="Quick Start11"></a>Quick Start11</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 技术文档 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 文章标签 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2023/08/02/hello-world%E7%9A%84%E5%89%AF%E6%9C%AC/"/>
-      <url>/2023/08/02/hello-world%E7%9A%84%E5%89%AF%E6%9C%AC/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
       
       
     </entry>
